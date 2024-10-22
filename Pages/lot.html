@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/lot.css">
+</head>
+
+<body>
+    
+    
+    <div id="content-container">
+        <div id="content" class="content d-flex mt-5 flex-column ">
+            <div class="d-flex flex-column">
+                <div class="text-content d-flex flex-column">
+                    <h2 class="contenth">Lot à gagner</h2>
+                    <p class="contentp">Les lots seront remis soit instantané ou dans un délai maximum de sept jour(s) à compter de la date de notification</p>
+                </div>
+                <div class="lot  gap-20 justify-content-center align-items-center">
+                    <div class="lot1 d-flex flex-column justify-content-between align-items-center">
+                        <div class="lottop1 d-flex flex-column justify-content-between align-items-center">
+                            <img src="../Images/50K-NEW.png" alt="">
+                            <span class="earn">Gagnants Journaliers</span>
+                            <p class="share">à partager par les cinq meilleurs joueurs chaque jour.</p>
+                        </div>
+                        <div class="lotbottom d-flex flex-column justify-content-between align-items-center ">
+                            <div class="firstBatch d-flex gap-1">
+                                <span>Premier lot :</span>
+                                <p>25 000 FCFA</p>
+                            </div>
+                            <div class="secondBatch d-flex gap-1">
+                                <span>Deuxième lot :</span>
+                                <p>10 000 FCFA</p>
+                            </div>
+                            <div class="thirdBatch d-flex gap-1">
+                                <span>Troisième lot : </span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fourthtBatch d-flex gap-1">
+                                <span>Quatrième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fifthBatch d-flex gap-1">
+                                <span>Cinquième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="lot1 d-flex flex-column justify-content-between align-items-center">
+                        <div class="lottop2 d-flex flex-column justify-content-between align-items-center">
+                            <img src="../Images/150K-NEW.png" alt="">
+                            <span class="earn">Gagants Bi-Hebdomadaires</span>
+                            <p class="share">à partager par les cinq meilleurs joueurs chaque jour.</p>
+                        </div>
+                        <div class="lotbottom d-flex flex-column justify-content-between align-items-center ">
+                            <div class="firstBatch d-flex gap-1">
+                                <span>Premier lot :</span>
+                                <p>25 000 FCFA</p>
+                            </div>
+                            <div class="secondBatch d-flex gap-1">
+                                <span>Deuxième lot :</span>
+                                <p>10 000 FCFA</p>
+                            </div>
+                            <div class="thirdBatch d-flex gap-1">
+                                <span>Troisième lot : </span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fourthtBatch d-flex gap-1">
+                                <span>Quatrième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fifthBatch d-flex gap-1">
+                                <span>Cinquième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="lot1 d-flex flex-column justify-content-between align-items-center">
+                        <div class="lottop3 d-flex flex-column justify-content-between align-items-center">
+                            <img src="../Images/1M-NEW.png" alt="">
+                            <span class="earn">Supers Gagnants</span>
+                            <p class="share">à partager par les cinq meilleurs joueurs chaque jour.</p>
+                        </div>
+                        <div class="lotbottom d-flex flex-column  align-items-center ">
+                            <div class="firstBatch d-flex gap-1">
+                                <span>Premier lot :</span>
+                                <p>25 000 FCFA</p>
+                            </div>
+                            <div class="secondBatch d-flex gap-1">
+                                <span>Deuxième lot :</span>
+                                <p>10 000 FCFA</p>
+                            </div>
+                            <div class="thirdBatch d-flex gap-1">
+                                <span>Troisième lot : </span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fourthtBatch d-flex gap-1">
+                                <span>Quatrième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                            <div class="fifthBatch d-flex gap-1">
+                                <span>Cinquième lot :</span>
+                                <p>5 000 FCFA</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+           
+        </div>
+
+</div>
+
+   
+
+
+    <!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Ton script personnalisé -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cookieIcon = document.querySelector('.cookie');
+        const cookieSection = document.querySelector('.cookie-section');
+
+        if (cookieIcon && cookieSection) {
+            // Quand on clique sur l'icône cookie
+            cookieIcon.addEventListener('click', function () {
+                console.log('Image cliquée');
+
+                cookieSection.classList.add('active-section');
+                cookieIcon.style.display = 'none'; // Cache l'image cookie
+            });
+
+            // Quand on clique n'importe où en dehors de la section cookie
+            document.addEventListener('click', function (event) {
+                if (!cookieSection.contains(event.target) && !cookieIcon.contains(event.target)) {
+                    cookieSection.classList.remove('active-section');
+                    cookieIcon.style.display = 'block'; // Rendre visible l'image cookie
+                }
+            });
+        } else {
+            console.error("L'icône ou la section cookie n'a pas été trouvée.");
+        }
+    });
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

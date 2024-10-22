@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Concept.css">
+</head>
+
+<body>
+    <!-- Logo and Button "Jouer" -->
+    <div class="top-bar d-flex justify-content-between align-items-center position-absolute top-0 w-100">
+        <img src="../Images/41a8d1e73bad93104d99061f807b6ed8.png" alt="Logo" class="logo">
+
+        <!-- Bouton SVG "Jouer" -->
+        <div class="btn-jouer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="91" height="70" viewBox="0 0 91 70" fill="none">
+                <g filter="url(#filter0_d_50_5687)">
+                    <path d="M66.7022 10.0573C75.3812 15.3178 86.4867 21.5702 86.9827 28.3362C87.4786 35.1023 77.3827 42.3643 68.7037 47.8374C60.0247 53.2927 52.7627 56.9414 42.8793 59.5805C32.9782 62.2019 20.4557 63.8137 13.0166 58.3584C5.57746 52.8853 3.22174 40.3628 5.84314 30.4617C8.48225 20.5783 16.0985 13.3163 23.5376 8.05578C30.9767 2.79526 38.2387 -0.446068 45.0048 0.0498728C51.7708 0.563526 58.0232 4.81445 66.7022 10.0573Z" fill="#FDD32F"/>
+                </g>
+                <defs>
+                    <filter id="filter0_d_50_5687" x="0.80957" y="0" width="90.1904" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_50_5687"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_50_5687" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+            <span>Jouer</span>
+        </div>
+    </div>
+
+    <!-- Nouvelle section -->
+    <div class="new-section d-flex  justify-content-center align-items-center ">
+             <p class="textContainer">kabou kabou <span>bouuu !</span></p>
+             
+        <p class="game">Jouez, Apprenez et Gagnez</p>
+        <img class="newSection" src="../Images/1M-New-Ff@3x 1.png" alt="">
+        
+        
+        <div class="d-flex prix-container flex-column w-994  justify-content-between align-items-center carrousel-container">
+            <div class="carrousel-track d-flex">
+                <div class="prix">
+                    <img src="../Images/50K-NEW.png" alt="">
+                    <h2>50 000 FCFA</h2>
+                    <p>à partager par les cinq meilleurs joueurs chaque jour.</p>
+                </div>
+        
+                <div class="prix">
+                    <img src="../Images/150K-NEW.png" alt="">
+                    <h2>100 000 FCFA</h2>
+                    <p>à partager par les meilleurs joueurs de chaque quinzaine.</p>
+                </div>
+        
+                <div class="prix">
+                    <img src="../Images/1M-NEW.png" alt="">
+                    <h2>Supers Gagnants</h2>
+                    <p>Tirage au sort à la fin de cinq supers gagnants parmi tous les participants</p>
+                </div>
+            </div>
+              <!-- Indicateurs du carrousel (visibles seulement sur les petits écrans) -->
+        <div class="carrousel-indicators">
+            <span class="dot active" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+        </div>
+        
+    </div>
+    
+    <!-- Background and Images -->
+<div class="background">
+
+        <div class="left-images">
+            <div class="lower-images">
+                <img src="../Images/OBJECTS.svg" alt="Image 2" class="image4"> <!-- Image 4 -->
+                <img src="../Images/Etoile rouge.svg" alt="" class="image2"> <!-- Image 2 -->
+                <img src="../Images/Vector (1).svg" alt="" class="image3"> <!-- Image 3 -->
+            </div>
+        </div>
+        <div class="right-images">
+            <div class="upper-image">
+                <img src="../Images/Group 10 (1).png" alt="Image 1" class="image1"> <!-- Image principale -->
+            </div>
+            <div class="lower-images">
+                <img src="../Images/Vector (2).svg" alt="" class="image5"> <!-- Image 4 -->
+                <img src="../Images/Vector (3).svg" alt="" class="image6"> <!-- Image 5 -->
+            </div>
+        </div>
+   
+        <div class="support"></div>
+    <div class="overlay" id="overlay"></div>
+<div class="pub" id="pub">
+    <div class="firstContent d-flex justify-content-center align-items-center">
+        <img src="../Images/41a8d1e73bad93104d99061f807b6ed8.png" alt="">
+        <div class="close-btn" id="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <g clip-path="url(#clip0_58_5969)">
+                  <mask id="mask0_58_5969" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28" height="28">
+                    <path d="M13.9999 25.6667C20.4434 25.6667 25.6666 20.4435 25.6666 14C25.6666 7.55651 20.4434 2.33334 13.9999 2.33334C7.55642 2.33334 2.33325 7.55651 2.33325 14C2.33325 20.4435 7.55642 25.6667 13.9999 25.6667Z" fill="white" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M17.2998 10.7001L10.7 17.2999M10.7 10.7001L17.2998 17.2999" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </mask>
+                  <g mask="url(#mask0_58_5969)">
+                    <path d="M0 0H28V28H0V0Z" fill="white"/>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_58_5969">
+                    <rect width="28" height="28" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </div> <!-- Croix pour fermer -->
+    </div>
+    <div class="secondContent">
+        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 387 484" fill="none">
+            <path d="M-151 0C122.547 68.5241 273.277 67.8962 537.5 0V528H-151V0Z" fill="white"/>
+          </svg>
+        <div class="svgContent">
+            <p>Kabou Kabou est un jeu organisé par la société 
+            KAMGOKO en partenariat avec la <strong>La Nationale 
+            du Bénin (LNB)</strong> et autorisé par le <strong> Ministère de l’Économie et des
+            Finances </strong> sous l’arrêté ministériel <span> 2023-N°2783/MEF/DC/SGM/LNB/SP/15456623 du 04/10/2023</span>
+            </p>
+            <div class="logoContainer d-flex justify-content-center align-items-center">
+                <img src="../Images/Logo-Vertical.png" alt="">
+                <div class="ligne"></div>
+                <img src="../Images/lnb-logo 1.png" alt="">
+            </div>
+            
+            <div class=" continuer justify-content-center align-items-center">
+                <span class="continuous">Continuer</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <nav class="custom-navbar">
+        <div class="w-100">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" data-section="concept.html">Concept</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="lot.html">Lots à gagner</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="HowPlay.html">Comment jouer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="regulation.html">Règlement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-section="FAQ.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div id="content-container">
+        
+    </div>
+    <img class="cookie" src="../Images/fluent_cookies-20-regular.svg" alt="">
+
+    <div class="cookie-section flex-column">
+        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
+            <path d="M19.7002 28.8C20.5489 28.8 21.3628 28.4629 21.963 27.8628C22.5631 27.2627 22.9002 26.4487 22.9002 25.6C22.9002 24.7513 22.5631 23.9374 21.963 23.3373C21.3628 22.7372 20.5489 22.4 19.7002 22.4C18.8515 22.4 18.0376 22.7372 17.4375 23.3373C16.8374 23.9374 16.5002 24.7513 16.5002 25.6C16.5002 26.4487 16.8374 27.2627 17.4375 27.8628C18.0376 28.4629 18.8515 28.8 19.7002 28.8ZM32.5002 35.2C33.3489 35.2 34.1628 34.8629 34.763 34.2628C35.3631 33.6627 35.7002 32.8487 35.7002 32C35.7002 31.1513 35.3631 30.3374 34.763 29.7373C34.1628 29.1372 33.3489 28.8 32.5002 28.8C31.6515 28.8 30.8376 29.1372 30.2375 29.7373C29.6374 30.3374 29.3002 31.1513 29.3002 32C29.3002 32.8487 29.6374 33.6627 30.2375 34.2628C30.8376 34.8629 31.6515 35.2 32.5002 35.2ZM42.1002 44.8C42.1002 45.6487 41.7631 46.4627 41.163 47.0628C40.5628 47.6629 39.7489 48 38.9002 48C38.0515 48 37.2376 47.6629 36.6375 47.0628C36.0374 46.4627 35.7002 45.6487 35.7002 44.8C35.7002 43.9513 36.0374 43.1374 36.6375 42.5373C37.2376 41.9372 38.0515 41.6 38.9002 41.6C39.7489 41.6 40.5628 41.9372 41.163 42.5373C41.7631 43.1374 42.1002 43.9513 42.1002 44.8ZM22.9002 44.8C23.7489 44.8 24.5628 44.4629 25.163 43.8628C25.7631 43.2627 26.1002 42.4487 26.1002 41.6C26.1002 40.7513 25.7631 39.9374 25.163 39.3373C24.5628 38.7372 23.7489 38.4 22.9002 38.4C22.0515 38.4 21.2376 38.7372 20.6375 39.3373C20.0374 39.9374 19.7002 40.7513 19.7002 41.6C19.7002 42.4487 20.0374 43.2627 20.6375 43.8628C21.2376 44.4629 22.0515 44.8 22.9002 44.8ZM32.5002 6.40003C27.2396 6.40047 22.1069 8.02153 17.8003 11.0427C13.4938 14.0638 10.2225 18.3383 8.43158 23.2846C6.64064 28.231 6.41701 33.609 7.7911 38.6869C9.1652 43.7649 12.0703 48.2962 16.1112 51.6644C20.152 55.0327 25.1325 57.0743 30.3748 57.5115C35.6172 57.9487 40.867 56.7602 45.41 54.1078C49.9529 51.4554 53.5685 47.4678 55.7647 42.6876C57.9609 37.9074 58.6311 32.5667 57.6842 27.392C57.6299 27.0967 57.4935 26.8225 57.2907 26.601C57.0879 26.3795 56.8269 26.2195 56.5375 26.1394C56.248 26.0593 55.9419 26.0623 55.654 26.148C55.3662 26.2337 55.1083 26.3986 54.9098 26.624C54.0513 27.602 52.915 28.295 51.6525 28.6106C50.39 28.9263 49.0612 28.8495 47.8435 28.3907C46.6257 27.9318 45.5767 27.1126 44.8365 26.0422C44.0962 24.9719 43.6999 23.7014 43.7002 22.4C43.6998 21.9912 43.5601 21.5948 43.3041 21.276C43.0482 20.9572 42.6913 20.7352 42.2922 20.6464C41.1671 20.3931 40.1313 19.8405 39.2944 19.0469C38.4574 18.2534 37.8505 17.2484 37.5378 16.1383C37.225 15.0282 37.218 13.8543 37.5175 12.7405C37.8171 11.6268 38.412 10.6147 39.2394 9.81123C39.445 9.61163 39.5932 9.36049 39.6685 9.08405C39.7438 8.80762 39.7436 8.51602 39.6677 8.23972C39.5919 7.96342 39.4432 7.71257 39.2373 7.51335C39.0313 7.31414 38.7757 7.17388 38.497 7.10723C36.5329 6.63634 34.52 6.39896 32.5002 6.40003ZM10.1002 32C10.1 28.823 10.7757 25.6823 12.0823 22.7864C13.3889 19.8904 15.2966 17.3056 17.6787 15.2034C20.0608 13.1013 22.8628 11.5299 25.8988 10.5936C28.9347 9.65729 32.1351 9.37751 35.2874 9.77283C34.613 10.9977 34.2143 12.3552 34.1192 13.7502C34.0242 15.1453 34.235 16.5443 34.737 17.8493C35.2389 19.1544 36.0199 20.3341 37.0254 21.3058C38.0308 22.2776 39.2364 23.018 40.5578 23.4752C40.7354 25.0563 41.3032 26.5683 42.2101 27.8755C43.117 29.1827 44.3346 30.244 45.7533 30.964C47.172 31.684 48.7475 32.0401 50.3379 32.0003C51.9284 31.9605 53.4841 31.5261 54.865 30.736C55.0328 33.7254 54.5996 36.7181 53.591 39.5372C52.5823 42.3563 51.0188 44.9445 48.9927 47.149C46.9667 49.3535 44.5192 51.1294 41.7951 52.3718C39.0709 53.6142 36.1253 54.2978 33.1325 54.3824C30.1396 54.4669 27.1601 53.9505 24.3702 52.8638C21.5803 51.7771 19.0365 50.1421 16.8893 48.0555C14.7421 45.9689 13.035 43.4729 11.8689 40.7153C10.7028 37.9576 10.1014 34.9941 10.1002 32Z" fill="#37399B"/>
+        </svg>
+        <p>Ce site Web utilise des cookies pour vous garantir la meilleure expérience sur notre site Web. <a href="#" class="know"> En savoir plus</a></p>
+        <div class="btn-section d-flex justify-content-between ">
+            <a href="#">Décliner</a>
+            <button class="btn-cookie">Accepter</button>
+        </div>
+    </div>
+
+   
+    
+   
+    
+    
+    
+   
+
+    
+
+<footer>
+    <div class="oneSection d-flex justify-content-between align-items-center">
+        <img class="logo-footer" src="../Images/41a8d1e73bad93104d99061f807b6ed8.png" alt="">
+        <div class="politique-section d-flex justify-content-center align-items-center flex-row">
+            <span>Politique de cookies</span>
+            <p class="politique">Politique de confidentialités</p>
+        </div>
+        
+        <div class="icon-section d-flex justify-content-between align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_1059_114)">
+                  <path d="M11.9989 5.83801C10.7802 5.83801 9.58883 6.19941 8.57549 6.8765C7.56216 7.55359 6.77236 8.51596 6.30597 9.64192C5.83958 10.7679 5.71756 12.0068 5.95532 13.2022C6.19308 14.3975 6.77995 15.4954 7.64173 16.3572C8.5035 17.219 9.60146 17.8059 10.7968 18.0436C11.9921 18.2814 13.2311 18.1593 14.357 17.693C15.483 17.2266 16.4453 16.4368 17.1224 15.4234C17.7995 14.4101 18.1609 13.2187 18.1609 12C18.1609 10.3657 17.5117 8.79842 16.3561 7.64282C15.2005 6.48722 13.6332 5.83801 11.9989 5.83801ZM11.9989 16.0008C11.2076 16.0008 10.4341 15.7662 9.77619 15.3266C9.11826 14.8869 8.60547 14.2621 8.30266 13.5311C7.99985 12.8 7.92062 11.9956 8.07499 11.2195C8.22936 10.4434 8.6104 9.73054 9.16992 9.17102C9.72945 8.6115 10.4423 8.23046 11.2184 8.07609C11.9945 7.92172 12.7989 8.00094 13.53 8.30376C14.261 8.60657 14.8858 9.11936 15.3255 9.77729C15.7651 10.4352 15.9997 11.2087 15.9997 12C15.9999 12.5255 15.8965 13.0458 15.6955 13.5312C15.4945 14.0167 15.1998 14.4578 14.8283 14.8294C14.4567 15.2009 14.0156 15.4956 13.5301 15.6966C13.0447 15.8976 12.5244 16.001 11.9989 16.0008Z" fill="white"/>
+                  <path d="M23.9268 7.0524C23.9069 6.05702 23.7182 5.07224 23.3688 4.14C23.0672 3.33928 22.5951 2.61372 21.9852 2.0136C21.3864 1.40328 20.6615 0.931081 19.8612 0.63C18.9286 0.280639 17.9433 0.0923567 16.9476 0.0732001C15.6684 0.0144001 15.2592 0 12 0C8.7408 0 8.3316 0.0131999 7.0524 0.0719999C6.05662 0.0917728 5.07142 0.280454 4.1388 0.63C3.33871 0.931461 2.61391 1.40361 2.0148 2.0136C1.40308 2.6127 0.929995 3.3385 0.6288 4.14C0.279797 5.07232 0.0915243 6.05709 0.0720002 7.0524C0.0120002 8.3316 0 8.7408 0 12C0 15.2592 0.0120002 15.6684 0.0720002 16.9476C0.0915474 17.9429 0.279819 18.9277 0.6288 19.86C0.929714 20.6614 1.40237 21.3871 2.0136 21.9864C2.61335 22.5962 3.33849 23.0683 4.1388 23.37C5.07153 23.719 6.0567 23.9073 7.0524 23.9268C8.3316 23.9856 8.7408 24 11.9988 24C15.2568 24 15.6672 23.9868 16.9464 23.928C17.9418 23.9081 18.9266 23.7194 19.8588 23.37C20.6561 23.0617 21.3802 22.5903 21.9846 21.9858C22.5891 21.3814 23.0605 20.6573 23.3688 19.86C23.7186 18.9279 23.9073 17.943 23.9268 16.9476C23.9844 15.6672 23.9988 15.2592 23.9988 12C23.9988 8.7408 23.9844 8.3316 23.9268 7.0524ZM21.7668 16.8492C21.7579 17.6101 21.6187 18.3638 21.3552 19.0776C21.1556 19.5952 20.8498 20.0653 20.4576 20.4576C20.0653 20.8498 19.5952 21.1556 19.0776 21.3552C18.364 21.6197 17.6102 21.7594 16.8492 21.768C15.5832 21.8256 15.204 21.8376 11.9988 21.8376C8.7936 21.8376 8.4156 21.8256 7.1508 21.768C6.38982 21.7593 5.63601 21.6197 4.9224 21.3552C4.40128 21.1625 3.9298 20.8559 3.5424 20.4576C3.14342 20.0708 2.83663 19.5991 2.6448 19.0776C2.38023 18.364 2.24059 17.6102 2.232 16.8492C2.1744 15.5844 2.1624 15.2052 2.1624 12.0012C2.1624 8.7972 2.1744 8.4168 2.232 7.1508C2.24159 6.3899 2.3812 5.63624 2.6448 4.9224C2.83744 4.40127 3.14411 3.92977 3.5424 3.5424C3.92912 3.14332 4.40081 2.83652 4.9224 2.6448C5.63599 2.38028 6.38981 2.24064 7.1508 2.232C8.4156 2.172 8.796 2.16 11.9988 2.16C15.2016 2.16 15.5832 2.1732 16.8492 2.2308C17.6101 2.24041 18.3638 2.38002 19.0776 2.6436C19.5952 2.84313 20.0653 3.14889 20.4576 3.54117C20.8499 3.93345 21.1557 4.40356 21.3552 4.9212C21.6197 5.63479 21.7594 6.38861 21.768 7.1496C21.8256 8.4156 21.8376 8.7936 21.8376 11.9988C21.8376 15.204 21.8256 15.582 21.768 16.848L21.7668 16.8492Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1059_114">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18.5867 3.76C17.6752 2.7195 17.173 1.38324 17.1733 0H13.0533V16.5333C13.0216 17.428 12.6438 18.2755 11.9997 18.8973C11.3555 19.519 10.4953 19.8665 9.6 19.8667C7.70667 19.8667 6.13333 18.32 6.13333 16.4C6.13333 14.1067 8.34667 12.3867 10.6267 13.0933V8.88C6.02667 8.26667 2 11.84 2 16.4C2 20.84 5.68 24 9.58667 24C13.7733 24 17.1733 20.6 17.1733 16.4V8.01333C18.844 9.21313 20.8498 9.85686 22.9067 9.85333V5.73333C22.9067 5.73333 20.4 5.85333 18.5867 3.76Z" fill="white"/>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_1059_120)">
+                  <path d="M11.988 1.04482e-05C5.43598 1.04482e-05 0.0959999 5.33999 0.0959999 11.892C0.0959999 13.992 0.647998 16.032 1.68 17.832L0 23.9999L6.29998 22.3439C8.03998 23.2919 9.99597 23.7959 11.988 23.7959C18.5399 23.7959 23.8799 18.456 23.8799 11.904C23.8799 8.72398 22.6439 5.73599 20.3999 3.492C19.2998 2.38071 17.9894 1.49961 16.5451 0.900069C15.1009 0.300531 13.5517 -0.00543716 11.988 1.04482e-05ZM12 2.004C14.64 2.004 17.1119 3.036 18.9839 4.908C19.9027 5.82642 20.6311 6.91717 21.1273 8.1177C21.6236 9.31823 21.878 10.6049 21.8759 11.904C21.8759 17.352 17.4359 21.7799 11.988 21.7799C10.212 21.7799 8.47198 21.3119 6.95998 20.4L6.59998 20.1959L2.85599 21.1799L3.85199 17.532L3.61199 17.148C2.62072 15.5744 2.09641 13.7518 2.09999 11.892C2.11199 6.44399 6.53998 2.004 12 2.004ZM7.77598 6.39599C7.58398 6.39599 7.25998 6.46799 6.98398 6.76799C6.71998 7.06799 5.93998 7.79999 5.93998 9.25198C5.93998 10.716 7.00798 12.12 7.13998 12.324C7.30798 12.528 9.25197 15.528 12.24 16.8C12.948 17.124 13.5 17.304 13.932 17.436C14.64 17.664 15.288 17.628 15.804 17.556C16.38 17.472 17.5559 16.836 17.8079 16.14C18.0599 15.444 18.0599 14.856 17.9879 14.724C17.9039 14.604 17.7119 14.532 17.4119 14.4C17.1119 14.232 15.648 13.512 15.384 13.416C15.108 13.32 14.94 13.272 14.712 13.56C14.52 13.86 13.944 14.532 13.776 14.724C13.596 14.928 13.428 14.952 13.14 14.808C12.828 14.652 11.868 14.34 10.74 13.332C9.85197 12.54 9.26397 11.568 9.08397 11.268C8.93997 10.98 9.07197 10.8 9.21597 10.668C9.34797 10.536 9.53997 10.32 9.65997 10.14C9.81597 9.97198 9.86397 9.83998 9.95997 9.64798C10.056 9.44398 10.008 9.27598 9.93597 9.13198C9.86397 8.99998 9.26397 7.51199 9.01197 6.92399C8.77197 6.34799 8.53197 6.41999 8.33998 6.40799C8.17198 6.40799 7.97998 6.39599 7.77598 6.39599Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1059_120">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <g clip-path="url(#clip0_1059_122)">
+                  <path d="M5.65576 24.0458C5.31592 24.0458 4.97864 23.9509 4.68256 23.7642C4.17023 23.4406 3.85272 22.886 3.83331 22.2801L3.77417 20.3399C1.34106 18.1582 0 15.095 0 11.7153C0 8.4895 1.23651 5.52301 3.48138 3.36218C5.70282 1.22424 8.72809 0.046875 12 0.046875C15.2719 0.046875 18.2972 1.22424 20.5186 3.36218C22.7635 5.52301 24 8.4895 24 11.7153C24 14.9409 22.7635 17.9073 20.5186 20.0682C18.2972 22.2061 15.2719 23.3837 12 23.3837C10.8204 23.3837 9.66614 23.2311 8.56897 22.9305L6.39093 23.8914C6.15491 23.9949 5.90479 24.0458 5.65576 24.0458ZM12 1.92188C6.22778 1.92188 1.875 6.13202 1.875 11.7153C1.875 14.5591 2.99799 17.1299 5.03705 18.954C5.41315 19.2927 5.62903 19.7516 5.64716 20.2482L5.64734 20.254L5.7052 22.1446L7.82867 21.2076C8.211 21.0394 8.64221 21.007 9.04376 21.1165C9.98749 21.3768 10.9812 21.5085 12 21.5085C17.7722 21.5085 22.125 17.2983 22.125 11.7153C22.125 6.13202 17.7722 1.92188 12 1.92188ZM6.10016 15.5451L9.60388 12.8438C9.84064 12.6661 10.1666 12.6638 10.4055 12.8416L12.9981 14.8568C13.7752 15.4367 14.8874 15.2322 15.4054 14.4146L18.6641 9.24701C18.9789 8.75372 18.3671 8.19617 17.9004 8.54938L14.3983 11.2031C14.1616 11.3809 13.8356 11.3831 13.5967 11.2053L11.0041 9.23712C10.227 8.65723 9.11481 8.86157 8.5968 9.67914L5.33643 14.8473C5.02167 15.3406 5.63342 15.8983 6.10016 15.5451Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1059_122">
+                    <rect width="24" height="24" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+        </div>
+    </div>
+    <div class="twoSection">
+        <div class="twoSection-left d-flex">
+            <span class="droits">Kabou kabou © 2023 Tous les droits réservés. <a href="#" class="confidential">                Politique de confidentialité
+            </a></span>
+        </div>
+        <div class="d-flex gap-1 twoSection-rigth">
+            <p class="design">Design by  </p>
+            <a href="#" class="link-kamgoko">Kamgoko</a>
+        </div>
+    </div>
+</footer>
+
+
+   <!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Ton script personnalisé -->
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carrousel-track');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    const totalSlides = dots.length;
+    const intervalTime = 3000; // Intervalle de 3 secondes
+    let slideInterval;
+
+    // Fonction pour changer de slide
+    function goToSlide(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+
+        // Mise à jour des indicateurs actifs
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+
+    // Fonction pour défilement automatique
+    function autoSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(currentIndex);
+    }
+
+    // Activer le défilement automatique uniquement sur les petits écrans
+    function startAutoSlide() {
+        if (window.innerWidth <= 768) {
+            slideInterval = setInterval(autoSlide, intervalTime); // Lancer le défilement automatique
+        }
+    }
+
+    // Réinitialiser l'intervalle lors du redimensionnement de l'écran
+    window.addEventListener('resize', () => {
+        clearInterval(slideInterval);
+        if (window.innerWidth <= 768) {
+            startAutoSlide();
+        }
+    });
+
+    // Initialisation
+    startAutoSlide();
+
+    // Interaction manuelle avec les indicateurs
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            clearInterval(slideInterval); // Arrêter temporairement le défilement automatique
+            goToSlide(index);
+            currentIndex = index; // Mettre à jour l'index actuel
+            startAutoSlide(); // Reprendre le défilement automatique après l'interaction
+        });
+    });
+});
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const cookieIcon = document.querySelector('.cookie');
+        const cookieSection = document.querySelector('.cookie-section');
+
+        if (cookieIcon && cookieSection) {
+            // Quand on clique sur l'icône cookie
+            cookieIcon.addEventListener('click', function () {
+                console.log('Image cliquée');
+
+                cookieSection.classList.add('active-section');
+                cookieIcon.style.display = 'none'; // Cache l'image cookie
+            });
+
+            // Quand on clique n'importe où en dehors de la section cookie
+            document.addEventListener('click', function (event) {
+                if (!cookieSection.contains(event.target) && !cookieIcon.contains(event.target)) {
+                    cookieSection.classList.remove('active-section');
+                    cookieIcon.style.display = 'block'; // Rendre visible l'image cookie
+                }
+            });
+        } else {
+            console.error("L'icône ou la section cookie n'a pas été trouvée.");
+        }
+    });
+
+
+    const closeButton = document.getElementById('close-btn');
+const overlay = document.getElementById('overlay');
+const pub = document.getElementById('pub');
+const contentContainer = document.getElementById('content-container'); // Conteneur de contenu
+
+// Masquer le contenu par défaut
+contentContainer.style.display = 'none'; 
+
+closeButton.addEventListener('click', function() {
+    overlay.style.display = 'none'; // Masquer le fond
+    pub.style.display = 'none'; // Masquer la section pub
+    document.body.style.overflow = 'auto'; // Rétablir le défilement
+
+    // Afficher le contenu après la fermeture de la pub
+    contentContainer.style.display = 'block'; 
+});
+
+// Sélectionner tous les liens de navigation
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Fonction pour charger le contenu d'une section
+function loadSection(url) {
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            contentContainer.innerHTML = data; // Charger le contenu dans le conteneur
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault(); // Empêche le comportement par défaut du lien
+
+        // Supprimer la classe active de tous les liens
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        // Ajouter la classe active au lien cliqué
+        this.classList.add('active');
+
+        // Charger le contenu de la section correspondante
+        const targetSectionUrl = this.getAttribute('data-section');
+        loadSection(targetSectionUrl);
+
+        const navList = document.querySelector('.nav-list');
+        const screenWidth = window.innerWidth; // Obtenir la largeur de l'écran
+
+     
+
+       
+
+        // Calculer la position du lien actif et ajuster la navbar uniquement sur les petits écrans
+        if (screenWidth <= 768) {
+            const offset = this.offsetLeft; // Position du lien actif
+            const adjustment = (navList.offsetWidth / 2) - (this.offsetWidth / 2); // Ajustement pour centrer
+   // Si la section cible est faq.html, ignorer toute transformation
+   if (targetSectionUrl === 'FAQ.html') {
+            navList.style.transform = 'translateX(-400px)'; // Ne pas appliquer de transformation sur faq.html
+            return; // Arrêter l'exécution ici pour faq.html
+        }
+         // Si la section cible est concept.html, remettre à la position initiale
+         if (targetSectionUrl === 'concept.html') {
+            navList.style.transform = 'translateX(0)'; // Remettre à la position initiale
+        }
+            // Calculer la transformation seulement si ce n'est pas faq.html
+            if (targetSectionUrl !== 'FAQ.html') {
+                navList.style.transform = `translateX(-${offset - adjustment}px)`; // Appliquer la transformation
+            }
+        } else {
+            // Réinitialiser la transformation pour les grands écrans
+            navList.style.transform = 'none';
+        }
+    });
+});
+
+
+// Charger la section par défaut au chargement de la page
+document.addEventListener('DOMContentLoaded', () => {
+    loadSection('concept.html'); // Charge la section Concept par défaut
+});
+
+       
+</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

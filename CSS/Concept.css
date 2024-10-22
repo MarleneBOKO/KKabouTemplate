@@ -1,0 +1,1213 @@
+body {
+    background: #FAFAFF;
+    
+    
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.top-bar {
+    padding: 13px 120px;
+    height: 100px;
+    z-index: 100;
+}
+
+.logo {
+    width: 122.351px;
+height: 74px;
+flex-shrink: 0;
+object-fit: cover;
+}
+
+.btn-jouer {
+    position: relative;
+    height: 70px;
+    width: 91px;
+    display: inline-block;
+}
+
+.btn-jouer svg {
+    display: block;
+}
+
+.btn-jouer span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--Primaire, #37399B);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+}
+
+
+.new-section {
+    z-index: 100;
+top: 100px;
+flex-direction: column;
+    position: absolute;
+    width: 100%;
+    padding: 10px; /* Ajustez l'espace interne selon vos besoins */
+    background-color: transparent; /* Ou définissez une couleur de fond si nécessaire */
+    /* Ajoutez d'autres styles comme la police, la couleur, etc. */
+}
+.prix-container {
+    flex-direction: row; /* Les éléments s'aligneront horizontalement */
+}
+.newSection{
+    height: 200px;
+    width: 684px;
+flex-shrink: 0;
+    object-fit: cover;
+}
+.text-container{
+    gap: 1px;
+}
+.textContainer{
+    color: var(--Yellow, #FDD32F);
+text-align: center;
+
+/* Drop */
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+.textContainer span{
+    color: var(--Turquoise, #6DD5D5);
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+.game{
+    color: var(--Blanc, #FFF);
+text-align: center;
+font-family: Montserrat;
+font-size: 38px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+
+.prix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 318px;
+;}
+.prix img{
+    width: 74px;
+height: 74px;
+object-fit: cover;
+}
+.prix h2{
+    color: var(--Yellow, #FDD32F);
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.2px;
+display: flex;
+width: 270px;
+height: 34px;
+flex-direction: column;
+justify-content: center;
+}
+.prix p{
+    width: 270px;
+height: 46px;
+align-items: center;
+color: var(--Blanc, #FFF);
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 129%; /* 20.64px */
+letter-spacing: -0.2px;
+}
+
+
+.background {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    position: relative; /* Positionner le conteneur relativement */
+    width: 100%; /* Prendre toute la largeur */
+    background: linear-gradient(37deg, #37399B 50.88%, #EC3D7C 100.34%); /* Dégradé de fond */
+    overflow: hidden; /* Cacher tout débordement */
+    align-items: flex-start; /* Aligner en haut */
+    
+}
+
+
+
+.image1 {
+    position: relative; /* Position absolue pour chaque image */
+    right: 0; /* Ajustez la position selon vos besoins */
+    width: 366.17px;
+    height: 304.887px;
+    object-fit: cover;
+    top: 160.06px;
+}
+
+.image4 {
+    position: relative; /* Position absolue pour cette image */
+    height: 305.287px;
+    width: 366.17px;
+    top:  120px;
+    rotate: -19.23 deg;
+    object-fit: cover;
+}
+
+.image2 {
+    mix-blend-mode: soft-light;
+    position: absolute; /* Position absolue pour cette image */
+    bottom: 34px; /* Ajustez la position selon vos besoins */
+    left: 53px; /* Ajustez la position selon vos besoins */
+    width: 62px;
+    height: 282px;
+}
+
+.image3 {
+    mix-blend-mode: soft-light;
+    position: absolute; /* Position absolue pour cette image */
+    bottom: 34px; /* Ajustez la position selon vos besoins */
+    left: 144px; /* Ajustez la position selon vos besoins */
+    width: 96px;
+    height: 225px;
+}
+.secondImage{
+    bottom: 0px; /* Ajustez la position selon vos besoins */
+}
+.image5 {
+    mix-blend-mode: soft-light;
+    position: absolute; /* Position absolue pour cette image */
+    bottom: 34px; /* Ajustez la position selon vos besoins */
+    left: 1189px; /* Ajustez la position selon vos besoins */
+    width: 73px;
+    height: 143px;
+
+}
+
+.image6 {
+    mix-blend-mode: soft-light;
+    position: absolute; /* Position absolue pour cette image */
+    bottom: 34px; /* Ajustez la position selon vos besoins */
+    left: 1257px; /* Ajustez la position selon vos besoins */
+    width: 169px;
+}
+
+.support {
+    width: 100%; /* S'adapte à la largeur du conteneur */
+    height: 34px;
+    background: rgba(0, 0, 0, 0.35);
+    mix-blend-mode: soft-light;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* S'assure que cette barre est derrière les autres éléments */
+}
+
+.log {
+    z-index: 3; /* S'assure que la navbar est au-dessus des autres éléments */
+    background-color: transparent; /* Rend la navbar transparente */
+}
+
+.logo img{
+    width: 122.351px;
+height: 74px;
+flex-shrink: 0;
+z-index: 3; /* S'assure que la navbar est au-dessus des autres éléments */
+
+}
+.game img{
+    height: 100px;
+}
+
+.custom-navbar {
+    background: #E6E7F5;
+        position: sticky; /* Garde la navbar en haut lors du défilement */
+    top: 0;
+    z-index: 1000;
+    height: 52px;
+}
+.nav-list {
+    display: flex;
+    flex-wrap: nowrap; /* Ne pas passer en colonne sur petits écrans */
+    justify-content: center; /* Commence à gauche pour éviter que le début soit caché */
+    align-items: center;
+    gap: 31px; /* Espacement entre les éléments */
+    padding-bottom: 8px; /* Évite que les éléments soient collés au bord inférieur */
+}
+
+.custom-navbar::-webkit-scrollbar {
+    display: none; /* Cacher la barre de défilement sur Webkit (Chrome, Safari) */
+}
+
+.nav-item {
+    list-style: none; /* Supprimer les puces de la liste */
+}
+
+.nav-link {
+    display: flex;
+    width: 180px; /* Largeur fixe pour les liens */
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    color: var(--Secondary, #6C6FD7); /* Couleur par défaut */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+.nav-link.active {
+    border-bottom: 3px solid #37399B;
+    color: var(--Primaire, #37399B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    color: #37399B;
+}
+
+.concept{
+    margin-top: 64px;
+    
+}
+.hero-image {
+    background-image: url('../Images/Group\ 20.svg'); /* Image par défaut */
+    max-width: 524px;
+    width: 100%;
+height: 425.5px;
+background-size: cover;
+background-position: center;
+}
+.concept-section{
+    display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 109px;
+}
+.paragraph-container{
+    color: #171717;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.2px;
+max-width: 542px;
+width: 100%;
+margin-right: 20px;
+}
+.btn{
+    margin-top: 48px;
+    display: flex;
+width: 220px;
+padding: 10px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: var(--Yellow, #FDD32F);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.btn span{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 19.8px */
+}
+.title-concept{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 41.8px */
+letter-spacing: -0.2px;
+margin-top: 30px;
+text-align: left; /* Aligne le texte à gauche, si besoin */
+
+width: 100%; /* Prendre toute la largeur si nécessaire */
+
+}
+.cookie{
+    width: 64px;
+    height: 64px;
+    margin-top: 67px;
+    margin-left: 56px;
+    cursor: pointer;
+    margin-bottom: 56px;
+}
+.cookie-section {
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center; /* Modifier flex-start en center */
+    gap: 24px;
+    border-radius: 16px;
+    background: var(--Blanc, #FFF);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+    width: 343px;
+    justify-content: center;
+    display: none;
+    margin-bottom: 56px;
+    margin-top: 67px;
+    margin-left: 56px;
+
+
+}
+.cookie-section.active-section {
+    display: flex; /* Montre le conteneur lorsque la classe est active */
+}
+.cookie-section svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+.cookie-section p{
+    color: #232323;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+.know{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+}
+.btn-section{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.btn-section a{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 15.4px */
+text-decoration-line: underline;
+}
+.btn-cookie{
+    display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: var(--Primaire, #37399B);
+color: var(--Blanc, #FFF);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+}
+
+footer{
+    height: 224px;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+}
+.oneSection{
+    height: 182px;
+    padding: 31px 120px;
+width: 100%;
+
+    background: linear-gradient(37deg, #37399B 50.88%, #EC3D7C 100.34%); /* Dégradé de fond */
+
+}
+.politique-section{
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+}
+.politique-section span, 
+.politique-section p {
+    margin: 0;
+    color: #C1C1FF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+}
+.logo-footer{
+    width: 181.873px;
+height: 110px;
+flex-shrink: 0;
+object-fit: cover;
+}
+.icon-section{
+    width: 168px;
+}
+
+.twoSection{
+    
+    display: flex;
+padding: 16px 24px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+margin: 0;
+justify-content: space-between;
+width: 100%;
+background: var(--Blanc, #FFF);
+}
+
+.droits{
+    color: #171717;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+}
+.confidential{
+    color: #37399A;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-decoration: none;
+text-align: center;
+}
+.design, .link-kamgoko {
+    display: flex;
+    align-items: center; /* Assure un alignement vertical centré */
+    margin: 0;
+    padding: 0;
+}
+
+.design{
+    color: #171717;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+display: flex;
+height: 34px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.twoSection-rigth p, a{
+    margin: 0;
+    padding: 0;
+}
+.link-kamgoko{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 31, 114, 0.70); /* Fond assombri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Fond assombri en arrière-plan */
+}
+
+.pub {
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(216deg, #37399B 26.85%, #6C6FD7 100.34%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    position: relative; /* Position relative pour le z-index */
+    z-index: 1000; /* Pub au-dessus de l'overlay */
+}
+
+
+.firstContent img {
+    width: 137.754px;
+    height: 74px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: relative;
+    top: 31px;
+}
+
+.secondContent {
+    height: 500px;
+    position: relative;
+    
+}
+.secondContent svg{
+    width: 500px;
+height: 447px;
+flex-shrink: 0;
+border-radius: 16px;
+display: block;
+
+}
+
+
+
+.svgContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 10px;
+}
+.svgContent p{
+    color: #37399B;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+width: 440px;
+}
+.svgContent strong{
+    color: #37399B;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+
+}
+.svgContent span{
+    color: #37399B;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+text-decoration-line: underline;
+}
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 440px;
+}
+
+.ligne {
+    width: 1px; /* Épaisseur de la ligne */
+    height: 48px; /* Hauteur de la ligne */
+    background: #8D8FE0; /* Couleur de la ligne */
+    margin: 0 10px; /* Ajoutez un espace horizontal autour de la ligne */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: -8px;
+    right: -35px;
+    cursor: pointer;
+    width: 28px;
+height: 28px;
+    font-size: 24px;
+    color: white; /* Couleur de la croix */
+}
+.continuer{
+    display: flex;
+width: 166px;
+padding: 12.5px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: var(--Primaire, #37399B);
+}
+.continuer .continuous{
+    color: var(--Blanc, #FFF);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+text-decoration-line: none;
+}
+/* Media query pour ajuster le gap sur petits écrans */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+       
+    }
+    .nav-list {
+        gap: 16px; /* Réduire le gap pour les petits écrans */
+    }
+    /* Style de la barre de navigation */
+.custom-navbar {
+    background:#E6E7F5;
+        position: sticky; /* Garde la navbar en haut lors du défilement */
+    width: 100%;
+    height: 54px;
+    overflow-x: auto; /* Pour faire défiler horizontalement si nécessaire */
+    overflow-y: hidden; /* Masquer le défilement vertical */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour la navbar */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start; /* Flex-start pour aligner les éléments à gauche */
+    align-items: center;
+
+    transition: transform 0.3s ease; /* Animation de glissement */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    width: 150px;
+    padding: 16px 10px;
+    text-decoration: none;
+    color: #6C6FD7;
+    transition: color 0.3s;
+    text-wrap: nowrap;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #37399B;
+    color: var(--Primaire, #37399B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 150px;
+    text-wrap: nowrap;
+
+}
+
+.nav-link:hover {
+    color: #37399B;
+}
+
+.section {
+    display: none; /* Cacher par défaut */
+    padding: 50px;
+    border: 1px solid #ccc; /* Pour voir la séparation des sections */
+    margin-top: 20px;
+}
+    .nav-list {
+        gap: 16px; /* Réduire le gap pour les petits écrans */
+    }
+   
+  
+    .concept-section{
+        flex-direction: column;
+        gap: 48px;
+    }  
+
+ 
+    .hero-image {
+        background-image: url('../Images/Group\ 29\ \(1\).svg'); /* Image pour petits écrans */
+        max-width: 387px;
+        width: 100%;
+        height: 321px;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .concept-group{
+        gap: 30px;
+        margin-left: 20px;
+        max-width: 387px;
+        width: 100%;
+    } 
+    .title-concept{
+        color: var(--Primaire, #37399B);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 30.8px */
+    letter-spacing: -0.2px;
+    text-align: left; /* Aligne le texte à gauche, si besoin */
+    width: 100%; /* Prendre toute la largeur si nécessaire */
+    }
+    .paragraph-container{
+        max-width: 387px;
+        width: 100%;
+    }
+    .paragraph-container p, span{
+    color: #171717;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    }
+    .icon-section {
+        order: 1; /* Mettre cette section en premier */
+    }
+
+    .politique-section {
+        order: 2; /* Mettre cette section en second */
+    }
+    .oneSection{
+        flex-direction: column;
+        height: 256px;
+        gap: 20px;
+    }
+    .politique-section{
+        width: 334px;
+    }
+    .politique-section  span{
+        color: #C1C1FF;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+        text-wrap: nowrap;
+    }
+    .politique-section .politique{
+        color: #C1C1FF;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+    }
+    .logo-footer{
+        width: 181.873px;
+height: 110px;
+    }
+    .twoSection{
+        flex-direction: column;
+    }
+    
+   .twoSection-left .doits{
+        color: #171717;
+        white-space: nowrap;
+text-align: center;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+    }
+    .confidential{
+        color: #37399A;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-decoration-line: underline;
+text-wrap: nowrap;
+white-space: normal; 
+
+    }
+
+    .prix-container {
+        
+        flex-direction: row; /* Les éléments s'aligneront horizontalement */
+    }
+
+    .carrousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+   
+    .prix {
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Chaque élément prend 100% de la largeur */
+    }
+
+    /* Styles pour les indicateurs (points), visibles seulement sur petits écrans */
+    .carrousel-indicators {
+        text-align: center;
+        margin-top: 32px;
+        display: block;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+        margin: 0 5px;
+        background-color: #6F71D1;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .dot.active {
+        background-color: #EFEFEF; 
+    
+    }
+
+    
+    .background {
+        position: relative; /* Positionner le conteneur relativement */
+        width: 100%; /* Prendre toute la largeur */
+        height: 100vh; /* Prendre toute la hauteur de la vue */
+        background: linear-gradient(37deg, #37399B 50.88%, #EC3D7C 100.34%); /* Dégradé de fond */
+        overflow: hidden; /* Cacher tout débordement */
+    }
+    
+    .content {
+        margin-top: 20px;
+        bottom: 0; /* Positionner en bas */
+        width: 100%; /* Prendre toute la largeur */
+    }
+    
+    .image1 {
+       display: none;
+    }
+    
+    .image4 {
+        display: none;
+    }
+    
+    .image2 {
+       display: none;
+    }
+    
+    .image3 {
+        mix-blend-mode: soft-light;
+        position: absolute; /* Position absolue pour cette image */
+        bottom: 34px; /* Ajustez la position selon vos besoins */
+        left: -2px; /* Ajustez la position selon vos besoins */
+        width: 96px;
+        height: 225px;
+    }
+    
+    .image5 {
+        mix-blend-mode: soft-light;
+
+        position: absolute; /* Position absolue pour cette image */
+        bottom: 34px; /* Ajustez la position selon vos besoins */
+        left: 301px; /* Ajustez la position selon vos besoins */
+        width: 73px;
+        height: 143px;
+    
+    }
+    
+    .image6 {
+        mix-blend-mode: soft-light;
+        position: absolute; /* Position absolue pour cette image */
+        bottom: 34px; /* Ajustez la position selon vos besoins */
+        left: 364px; /* Ajustez la position selon vos besoins */
+        width: 169px;
+    }
+
+    .top-bar{
+        padding: 26px;
+    }
+    .text-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .textContainer{
+        color: var(--Yellow, #FDD32F);
+    text-align: center;
+
+    /* Drop */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    width: 300px;
+    }
+    .textContainer span{
+        color: var(--Turquoise, #6DD5D5);
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.2px;
+    }
+    .game{
+        color: var(--Blanc, #FFF);
+text-align: center;
+font-family: Montserrat;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.2px;
+    }
+    .newSection{
+        display: flex;
+width: 388px;
+height: 177.393px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(29, 31, 114, 0.70); /* Fond assombri */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999; /* Fond assombri en arrière-plan */
+    }
+    
+    .pub {
+        width: 387px;
+        height: 570px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(216deg, #37399B 26.85%, #6C6FD7 100.34%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+        position: relative; /* Position relative pour le z-index */
+        z-index: 1000; /* Pub au-dessus de l'overlay */
+    }
+    
+    
+    .firstContent img {
+        width: 137.754px;
+        height: 74px;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: relative;
+        top: 31px;
+    }
+    
+    .secondContent {
+        height: 528px;
+        position: relative;
+        
+    }
+    .secondContent svg{
+        width: 387px;
+        height: 528px;
+        
+        flex-shrink: 0;
+    border-radius: 16px;
+    display: block;
+    
+    }
+    
+    
+    
+    .svgContent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        padding: 10px;
+        height: 570px;
+
+    }
+    .svgContent p{
+        color: #37399B;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    width: 339px;
+    }
+    .svgContent strong{
+        color: #37399B;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    
+    }
+    .svgContent span{
+        color: #37399B;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration-line: underline;
+    }
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 440px;
+    }
+    
+    .ligne {
+        width: 1px; /* Épaisseur de la ligne */
+        height: 48px; /* Hauteur de la ligne */
+        background: #8D8FE0; /* Couleur de la ligne */
+        margin: 0 10px; /* Ajoutez un espace horizontal autour de la ligne */
+    }
+    
+    
+    .close-btn {
+        position: absolute;
+        top: -40px;
+        right: 6px;
+        cursor: pointer;
+        width: 28px;
+    height: 28px;
+        font-size: 24px;
+        color: white; /* Couleur de la croix */
+    }
+    .continuer{
+        display: flex;
+    width: 291px;
+    padding: 12.5px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--Primaire, #37399B);
+    }
+    .continuer .continuous{
+        color: var(--Blanc, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+    text-decoration-line: none;
+    }
+
+}
+@media (min-width: 769px) {
+    .carrousel-track {
+        display: flex;
+        flex-direction: row;
+        transform: none; /* Aucun mouvement pour le carrousel */
+    }
+
+    .prix {
+        width: auto;
+    }
+
+    .carrousel-indicators {
+        display: none; /* Masquer les indicateurs sur les grands écrans */
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+/* Pour les petits écrans (moins de 576px, par exemple les téléphones) */
+@media (max-width: 575.98px) {
+    
+}
+
+/* Pour les tablettes (écrans de 576px à 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/* Pour les écrans moyens (768px à 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+/* Pour les grands écrans (992px à 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* Pour les très grands écrans (au-delà de 1200px) */
+@media (min-width: 1200px) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+

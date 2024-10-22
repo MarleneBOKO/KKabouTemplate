@@ -1,0 +1,694 @@
+body {
+    background: #FAFAFF;
+
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style de la barre de navigation */
+.custom-navbar {
+    background: rgba(55, 57, 155, 0.10);
+        position: sticky; /* Garde la navbar en haut lors du défilement */
+    top: 0;
+    z-index: 1000;
+    height: 52px;
+}
+.nav-list {
+    display: flex;
+    flex-wrap: nowrap; /* Ne pas passer en colonne sur petits écrans */
+    justify-content: center; /* Commence à gauche pour éviter que le début soit caché */
+    align-items: center;
+    gap: 31px; /* Espacement entre les éléments */
+    padding-bottom: 8px; /* Évite que les éléments soient collés au bord inférieur */
+}
+
+.nav-list::-webkit-scrollbar {
+    display: none; /* Cacher la barre de défilement sur Webkit (Chrome, Safari) */
+}
+
+.nav-item {
+    list-style: none; /* Supprimer les puces de la liste */
+}
+
+.nav-link {
+    display: flex;
+    width: 180px; /* Largeur fixe pour les liens */
+    padding: 16px 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Supprimer le soulignement par défaut */
+    color: var(--Secondary, #6C6FD7); /* Couleur par défaut */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s; /* Transition pour le changement de couleur */
+}
+.nav-link.active {
+    border-bottom: 3px solid #37399B;
+    color: var(--Primaire, #37399B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    color: #37399B;
+}
+.section {
+    display: none; /* Cacher par défaut */
+    padding: 50px;
+    border: 1px solid #ccc; /* Pour voir la séparation des sections */
+    margin-top: 20px;
+}
+
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+    .nav-list {
+        gap: 16px; /* Réduire le gap pour les petits écrans */
+    }
+    .nav-link {
+        width: 150px; /* Ajustement de la largeur */
+    }
+}
+.lot{
+    width: 100%;
+    display: flex;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.content{
+    margin-top: 64px;
+}
+.text-content{
+    gap: 24px;
+}
+.contenth{
+    color: var(--Primaire, #37399B);
+text-align: center;
+font-family: Montserrat;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 41.8px */
+letter-spacing: -0.2px;
+}
+.contentp{
+    color: #171717;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+.lot1{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 16px;
+border: 2px solid #DADBEC;
+
+
+}
+.lottop1{
+    display: flex;
+width: 387px;
+height: 221px;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+gap: 9px;
+border-radius:16px 16px 0px 0px;
+
+background: var(--Dgrad, linear-gradient(216deg, #37399B 26.85%, #6C6FD7 100.34%));
+}
+
+.lottop2{
+    display: flex;
+width: 387px;
+height: auto;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+gap: 9px;
+border-radius:16px 16px 0px 0px;
+
+background: linear-gradient(216deg, #37399B 54.58%, #289E9E 100.34%);
+
+}
+.lottop3{
+    display: flex;
+width: 387px;
+height: auto;
+padding: 24px;
+flex-direction: column;
+align-items: center;
+gap: 9px;
+border-radius:16px 16px 0px 0px;
+
+background: linear-gradient(216deg, #37399B 50.88%, #EC3D7C 100.34%);
+
+}
+.earn{
+    color: var(--Yellow, #FDD32F);
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+.share{
+    text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 129%; /* 20.64px */
+letter-spacing: -0.2px;
+background: var(--Nuage, linear-gradient(180deg, #F1F1FB 0%, #ECECF8 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.lotbottom{
+    display: flex;
+width: 387px;
+padding: 24px 24px 32px 24px;
+flex-direction: column;
+background-color: var(--Blanc, #FFF);
+gap: 10px;
+border-radius: 16px;
+}
+.firstBatch, .secondBatch, .thirdBatch, .fourthtBatch, .fifthBatch {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 100%; /* Égaliser la largeur des batches */
+}
+.firstBatch span, .secondBatch span, .thirdBatch span, .fourthtBatch span, .fifthBatch span {
+    color: rgba(23, 23, 23, 0.70);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.firstBatch p, .secondBatch p, .thirdBatch p, .fourthtBatch p, .fifthBatch p {
+    color: rgba(23, 23, 23, 0.70);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+}
+.secondBatch , .fourthtBatch{
+    display: flex;
+padding: 10px;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+background-color: #F1F1FB;
+width: 339px;
+
+}
+.secondBatch p, span{
+    margin: 0;
+    padding: 0;
+}
+.fourthtBatch p, span{
+    margin: 0;
+    padding: 0;
+}
+.firstBatch p, span{
+    margin: 0;
+    padding: 0;
+}
+.thirdBatch p, span{
+    margin: 0;
+    padding: 0;
+}
+.fifthBatch p, span{
+    margin: 0;
+    padding: 0;
+}
+.cookie{
+    width: 64px;
+    height: 64px;
+    margin-top: 67px;
+    margin-left: 56px;
+    cursor: pointer;
+    margin-bottom: 56px;
+}
+.cookie-section {
+    padding: 24px 16px;
+    flex-direction: column;
+    align-items: center; /* Modifier flex-start en center */
+    gap: 24px;
+    border-radius: 16px;
+    background: var(--Blanc, #FFF);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+    width: 343px;
+    justify-content: center;
+    display: none;
+    margin-bottom: 56px;
+    margin-top: 67px;
+    margin-left: 56px;
+
+
+}
+.cookie-section.active-section {
+    display: flex; /* Montre le conteneur lorsque la classe est active */
+}
+.cookie-section svg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+}
+.cookie-section p{
+    color: #232323;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 19.6px */
+}
+.know{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+text-decoration-line: underline;
+}
+.btn-section{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+.btn-section a{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 110%; /* 15.4px */
+text-decoration-line: underline;
+}
+.btn-cookie{
+    display: flex;
+padding: 16px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+background: var(--Primaire, #37399B);
+color: var(--Blanc, #FFF);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 15.4px */
+}
+
+footer{
+    height: 224px;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+}
+.oneSection{
+    height: 182px;
+    padding: 31px 120px;
+width: 100%;
+
+    background: linear-gradient(37deg, #37399B 50.88%, #EC3D7C 100.34%); /* Dégradé de fond */
+
+}
+.politique-section{
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+}
+.politique-section span, 
+.politique-section p {
+    margin: 0;
+    color: #C1C1FF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 112.5% */
+}
+.logo-footer{
+    width: 181.873px;
+height: 110px;
+flex-shrink: 0;
+object-fit: cover;
+}
+.icon-section{
+    width: 168px;
+}
+
+.twoSection{
+    
+    display: flex;
+padding: 16px 24px;
+align-items: center;
+gap: 16px;
+align-self: stretch;
+background: var(--Blanc, #FFF);
+}
+.twoSection {
+    margin: 0;
+ 
+}
+.droits{
+    color: #171717;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+}
+.confidential{
+    color: #37399A;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-decoration: none;
+text-align: center;
+}
+.design, .link-kamgoko {
+    display: flex;
+    align-items: center; /* Assure un alignement vertical centré */
+    margin: 0;
+    padding: 0;
+}
+
+.design{
+    color: #171717;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+display: flex;
+height: 34px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.twoSection-rigth p, a{
+    margin: 0;
+    padding: 0;
+}
+.link-kamgoko{
+    color: var(--Primaire, #37399B);
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+}
+
+
+
+/* Media query pour ajuster le gap sur petits écrans */
+@media (max-width: 768px) {
+    .nav-list {
+        gap: 16px; /* Réduire le gap pour les petits écrans */
+    }
+    /* Style de la barre de navigation */
+    .custom-navbar {
+        background: rgba(55, 57, 155, 0.10);
+            position: sticky; /* Garde la navbar en haut lors du défilement */
+        width: 100%;
+        height: 54px;
+        overflow-x: auto; /* Pour faire défiler horizontalement si nécessaire */
+        overflow-y: hidden; /* Masquer le défilement vertical */
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour la navbar */
+    }
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start; /* Flex-start pour aligner les éléments à gauche */
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    transition: transform 0.3s ease; /* Animation de glissement */
+    padding: 0; /* Supprime le padding par défaut */
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    width: 150px;
+    padding: 16px 10px;
+    text-decoration: none;
+    color: #6C6FD7;
+    transition: color 0.3s;
+    text-wrap: nowrap;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #37399B;
+    color: var(--Primaire, #37399B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 150px;
+    text-wrap: nowrap;
+
+}
+
+.nav-link:hover {
+    color: #37399B;
+}
+  
+    .contenth{
+        color: var(--Primaire, #37399B);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 30.8px */
+    letter-spacing: -0.2px;
+    }
+    .contentp{
+        color: #171717;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 388px;
+    }
+    .text-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .lot{
+        flex-direction: column;
+        display: flex;
+
+    }
+    .oneSection{
+        flex-direction: column;
+        height: 256px;
+        gap: 20px;
+    }
+    .politique-section{
+        width: 334px;
+    }
+    .politique-section  span{
+        color: #C1C1FF;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+        text-wrap: nowrap;
+    }
+    .politique-section .politique{
+        color: #C1C1FF;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+    }
+    .logo-footer{
+        width: 181.873px;
+height: 110px;
+    }
+    .twoSection{
+        flex-direction: column;
+    }
+    
+    .twoSection{
+        flex-direction: column;
+    }
+    
+   .twoSection-left .doits{
+        color: #171717;
+        white-space: nowrap;
+text-align: center;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 150% */
+    }
+    .confidential{
+        color: #37399A;
+font-family: Montserrat;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-decoration-line: underline;
+text-wrap: nowrap;
+white-space: normal; 
+
+    }
+
+}
+
+/* Pour les petits écrans (moins de 576px, par exemple les téléphones) */
+@media (max-width: 575.98px) {
+    .lot {
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Les éléments seront empilés */
+        align-items: center;
+        gap: 10px;
+    }
+    .lot1 {
+        width: 100%; /* S'étend à la largeur de l'écran */
+    }
+    .lottop1, .lottop2, .lottop3, .lotbottom {
+        width: 100%; /* Ajuste la largeur au contenant */
+        padding: 16px; /* Réduit le padding pour plus de confort visuel */
+    }
+    .firstBatch, .secondBatch, .thirdBatch, .fourthtBatch, .fifthBatch {
+        width: 100%; /* Assure une pleine largeur pour les lots */
+        padding: 8px;
+        text-align: center;
+    }
+    .firstBatch span, .secondBatch span, .thirdBatch span, .fourthtBatch span, .fifthBatch span {
+        font-size: 14px; /* Réduit la taille du texte */
+    }
+    .firstBatch p, .secondBatch p, .thirdBatch p, .fourthtBatch p, .fifthBatch p {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+/* Pour les tablettes (écrans de 576px à 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .content{
+        justify-content: center;
+        align-items: center;
+    }
+    .lot {
+        width: 387px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .lot1 {
+        width: 100%; /* S'ajuste pour occuper toute la largeur disponible */
+    }
+    .lottop1, .lottop2, .lottop3, .lotbottom {
+        width: 100%; /* Adapte la largeur pour des tablettes */
+        padding: 20px;
+    }
+    .firstBatch, .secondBatch, .thirdBatch, .fourthtBatch, .fifthBatch {
+        flex-direction: row; /* Garde les éléments sur une ligne pour les tablettes */
+        justify-content: space-between; /* Répartit le contenu de manière équilibrée */
+        width: 100%;
+    }
+}
+
+/* Pour les écrans moyens (768px à 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .lot {
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* Les éléments sont placés côte à côte */
+        flex-wrap: wrap; /* Permet de s'adapter aux petites largeurs */
+        gap: 20px;
+    }
+    .lot1 {
+        width: 48%; /* Occupe environ la moitié de l'écran */
+    }
+    .lottop1, .lottop2, .lottop3, .lotbottom {
+        width: 100%; /* Ajuste la largeur des lots */
+        padding: 24px;
+    }
+}
+
+/* Pour les grands écrans (992px à 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .lot {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .lot1 {
+        width: 32%; /* Chaque lot prend environ un tiers de la largeur */
+    }
+    .lottop1, .lottop2, .lottop3, .lotbottom {
+        width: 100%;
+    }
+}
+
+/* Pour les très grands écrans (au-delà de 1200px) */
+@media (min-width: 1200px) {
+  
+}
+
+
+
+
+
+
+
+
